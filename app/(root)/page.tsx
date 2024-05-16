@@ -1,3 +1,9 @@
-export default function Home() {
-	return <h1>Shimstore</h1>
+import { UserButton } from '@clerk/nextjs'
+
+export default function RootPage() {
+	return (
+		<div className='p-4'>
+			<UserButton afterSignOutUrl='/' />
+		</div>
+	)
 }
